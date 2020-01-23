@@ -1,0 +1,10 @@
+github.com/NandoTheessen/Gophercises---urlshort v0.0.0-20200123221936-bdbafedd3e94 h1:H1mNLxeFL2kk3pyKSqW+1xUGvl1hwqpRWPz79+XrdOg=
+github.com/NandoTheessen/Gophercises---urlshort v0.0.0-20200123221936-bdbafedd3e94/go.mod h1:7cdly1V2WxXeCmnoJaT3XGJsCkBCrSUxxsiE39ou5II=
+github.com/nandotheessen/Gophercises v0.0.0-20200119171929-ca286cb12821 h1:iLpwtqttV+H6AYCvy31+gMrymRQVo1ftdcoWY9KB8cE=
+github.com/nandotheessen/Gophercises v0.0.0-20200119171929-ca286cb12821/go.mod h1:URRY4lu6iL+Gve+OfPPmWhu5qMw4fXpXVVKdzP8WMdY=
+github.com/nandotheessen/Gophercises/urlshort v0.0.0-20200123220458-0547a2cc140a h1:Ik5bWcPYTWrytGI+6BTQd49NkKRYqpss8EeeRmxbvUk=
+github.com/nandotheessen/Gophercises/urlshort v0.0.0-20200123220458-0547a2cc140a/go.mod h1:KZS0/1vCZXpjePfwRrXyOT/EOwR118C9ym/zZUIs6JM=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.2.7/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
+gopkg.in/yaml.v2 v2.2.8 h1:obN1ZagJSUGI0Ek/LBmuj4SNLPfIny3KsKFopxRdj10=
+gopkg.in/yaml.v2 v2.2.8/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
