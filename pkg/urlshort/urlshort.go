@@ -2,7 +2,8 @@ package urlshort
 
 import (
 	"net/http"
-	"gopkg.in/yaml.v2"
+	"fmt"
+	"github.com/NandoTheessen/Gophercises-urlshort/pkg/reader"
 )
 
 // MapHandler will return an http.HandlerFunc (which also
@@ -41,20 +42,21 @@ func MapHandler(pathsToUrls map[string]string, fallback http.Handler) http.Handl
 // a mapping of paths to urls.
 func YAMLHandler(yml []byte, fallback http.Handler) (http.HandlerFunc, error) {
 	// TODO: Implement this...
-	var output []pathURL
-	pathsToUrls := make(map[string]string)
-	err := yaml.Unmarshal(yml, &output)
-	if err != nil {
-		return nil, err
-	}
+	pathsToUrls, err := reader.ProcessYaml(yml)
 
-	for _, val := range output {
-		pathsToUrls[val.Path] = val.URL
+	if err != nil {
+		fmt.Print(err)
 	}
 	return MapHandler(pathsToUrls, fallback), nil
 }
 
-type pathURL struct {
-	Path string `yaml:"path"`
-	URL string `yaml:"url"`
+//JSONHandler parses provided json & return http.Handlerfunc
+func JSONHandler(j []byte, fallback http.Handler) (http.HandlerFunc, error) {
+	// TODO: Implement this...
+	pathsToUrls, err := reader.ProcessJSON(j)
+
+	if err != nil {
+		fmt.Print(err)
+	}
+	return MapHandler(pathsToUrls, fallback), nil
 }
