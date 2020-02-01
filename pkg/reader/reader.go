@@ -28,8 +28,8 @@ func ProcessFile(filename string) (contents []byte, err error) {
 }
 
 type pathURL struct {
-	Path string `yaml:"path"`
-	URL string `yaml:"url"`
+	Path string
+	URL string
 }
 
 // ProcessYaml takes in an array of bytes containing yaml file content & parses it
