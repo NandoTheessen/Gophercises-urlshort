@@ -42,10 +42,18 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-		fmt.Println("Starting the server on :8080")
+		fmt.Println("Starting the server on :8080 using yaml input")
 		http.ListenAndServe(":8080", yamlHandler)
+	} else if format == "json" {
+		jsonHandler, err := urlshort.JSONHandler(byteString, mapHandler)
+		if err != nil {
+			panic(err)
+		}
+		fmt.Println("Starting the server on :8080 using json input")
+		http.ListenAndServe(":8080", jsonHandler)
 	} else {
-		// build json handler
+		fmt.Println("The file format you've provided is invalid!")
+		return
 	}
 }
 
