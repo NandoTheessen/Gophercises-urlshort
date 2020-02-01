@@ -40,9 +40,9 @@ func MapHandler(pathsToUrls map[string]string, fallback http.Handler) http.Handl
 //
 // See MapHandler to create a similar http.HandlerFunc via
 // a mapping of paths to urls.
-func YAMLHandler(yml []byte, fallback http.Handler) (http.HandlerFunc, error) {
+func YAMLHandler(y []byte, fallback http.Handler) (http.HandlerFunc, error) {
 	// TODO: Implement this...
-	pathsToUrls, err := reader.ProcessYaml(yml)
+	pathsToUrls, err := reader.ProcessYaml(y)
 
 	if err != nil {
 		fmt.Print(err)
